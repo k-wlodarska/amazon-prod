@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://localhost:27017/amazon';
+var url = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/amazon';
 var collection = null;
 
 var collectionPromise = MongoClient

@@ -1,6 +1,6 @@
 var request = require('supertest');
 var assert = require('assert');
-var stockRepository = require('../inMemoryRepo');
+var stockRepository = require('../inMemoryRepo')();
 var app = require('../app')(stockRepository);
 
 describe('GET /user', function(){

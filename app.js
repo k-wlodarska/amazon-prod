@@ -10,6 +10,7 @@ module.exports = function(stockRepository) {
 
     app.use(bodyParser.json());
 
+    app.get('/', function() {res.send("Hello ES6")});
     app.get('/', middleware.authorize);
 
     app.post('/stock', routes.stockUp);

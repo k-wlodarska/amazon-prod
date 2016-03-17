@@ -5,7 +5,7 @@ var collection = null;
 var collectionPromise = MongoClient
     .connect(url)
     .then(function(db) {
-        return db.collection('book');
+        return db.collection('db_wlodarska');
     });
 
 module.exports = {
